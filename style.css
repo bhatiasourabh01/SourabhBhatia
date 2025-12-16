@@ -1158,6 +1158,14 @@ select.form-control {
 .book-formats {
   margin-bottom: var(--space-16);
 }
+
+.book-isbn {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-12);
+  font-weight: 500;
+}
+
 .author-photo img {
   width: 100%;
   height: 100%;

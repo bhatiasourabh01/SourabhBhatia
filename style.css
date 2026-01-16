@@ -1278,7 +1278,9 @@ select.form-control {
 }
 
 .contact-item {
+  display: flex;
   margin-bottom: var(--space-8);
+  text-align: center;
 }
 
 .contact-item strong {
@@ -1286,12 +1288,19 @@ select.form-control {
 }
 
 .contact-item a {
+  margin-left: var(--space-10);
   color: var(--color-primary);
   text-decoration: none;
 }
 
 .contact-item a:hover {
   color: var(--color-primary-hover);
+}
+
+.contact-item img{
+  display: inline;
+  height: var(--space-24);
+  width: var(--space-24);
 }
 
 .social-links {

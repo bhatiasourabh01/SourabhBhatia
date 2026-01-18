@@ -493,7 +493,7 @@ pre code {
   justify-content: center;
   padding: var(--space-8) var(--space-16);
   border-radius: var(--radius-base);
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-lg);
   font-weight: 500;
   line-height: 1.5;
   border: none;
@@ -1178,15 +1178,15 @@ select.form-control {
 }
 .book-link {
   display: inline-block;
-  margin-right: var(--space-10);
-  width: var(--space-40);
-  height: var(--space-40);
+  margin-right: var(--space-20);
+  width: var(--space-50);
+  height: var(--space-50);
 }
 .book-link-sm {
   display: inline-block;
   margin-right: var(--space-10);
-  width: 37px;
-  height: 37px;
+  width: 47px;
+  height: 47px;
 }
 
 .book-link:hover {
@@ -1206,7 +1206,7 @@ select.form-control {
 .label-buy {
   font-size: var(--font-size-base);
   color: var(--color-white);
-  margin-right: var(--space-8);
+  margin-right: var(--space-20);
 }
 .language,
 .format {

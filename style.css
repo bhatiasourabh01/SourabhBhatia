@@ -485,6 +485,62 @@ pre code {
   cursor: not-allowed;
 }
 
+/* Buy button styles (Amazon / Flipkart) */
+.book-buy {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: stretch;
+}
+
+.buy-btn {
+  display: flex;
+  width: 100%;
+  position: relative;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  transition: background var(--duration-fast) var(--ease-standard), transform var(--duration-fast) var(--ease-standard);
+}
+
+.buy-btn img {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: auto;
+  display: block;
+}
+
+.buy-amazon {
+  background: var(--color-orange-500);
+  color: var(--color-cream-50);
+}
+.buy-amazon:hover,
+.buy-amazon:focus {
+  background: var(--color-orange-400);
+  transform: translateY(-1px);
+}
+
+.buy-flipkart {
+  background: #FFD700;
+  color: var(--color-slate-900);
+}
+.buy-flipkart:hover,
+.buy-flipkart:focus {
+  background: #F0C000;
+  transform: translateY(-1px);
+}
+
+.buy-btn:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
 /* Box */
 
 .box {
@@ -1175,6 +1231,17 @@ select.form-control {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+/* Ensure small buy-button logos keep their size and stay left-aligned */
+.book-info .buy-btn img {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: auto;
+  display: block;
 }
 .book-link {
   display: inline-block;
